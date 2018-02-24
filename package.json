@@ -1,0 +1,43 @@
+{
+  "name": "@authnomicon/aaa-aws-cognito",
+  "version": "0.0.0",
+  "description": "Amazon Cognito components for the Authnomicon project.",
+  "keywords": [
+    "amazon",
+    "aws",
+    "cognito"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/authnomicon/aaa-aws-cognito.git"
+  },
+  "bugs": {
+    "url": "http://github.com/authnomicon/aaa-aws-cognito/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./app",
+  "assembly": {
+    "namespace": "opt/aws/cognito",
+    "components": [
+    ]
+  },
+  "devDependencies": {
+    "make-node": "^0.3.0",
+    "mocha": "^4.0.1",
+    "chai": "^4.1.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/*.test.js"
+  }
+}
