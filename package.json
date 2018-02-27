@@ -30,7 +30,12 @@
   "assembly": {
     "namespace": "opt/aws/cognito",
     "components": [
+      "directory/plugin",
+      "authentication/password/plugin"
     ]
+  },
+  "dependencies": {
+    "aws-sdk": "^2.202.0"
   },
   "devDependencies": {
     "make-node": "^0.3.0",
