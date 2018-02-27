@@ -1,6 +1,7 @@
 exports = module.exports = function() {
   var uri = require('url')
-    , PasswordVerifier = require('../../../lib/pwver/password');
+    , PasswordVerifier = require('../../../lib/pwver/password')
+    , SRPVerifier = require('../../../lib/pwver/srp')
   
   
   return {
@@ -30,6 +31,7 @@ exports = module.exports = function() {
       segments = url.pathname.split('/');
       
       return new PasswordVerifier(segments[1], hostnames[1]);
+      //return new SRPVerifier(segments[1], hostnames[1]);
     }
   };
 };
