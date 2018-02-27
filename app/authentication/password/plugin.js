@@ -1,6 +1,6 @@
 exports = module.exports = function() {
   var uri = require('url')
-    , AmazonCognitoPasswordVerifier = require('../../../lib/pwver');
+    , PasswordVerifier = require('../../../lib/pwver/password');
   
   
   return {
@@ -29,7 +29,7 @@ exports = module.exports = function() {
       hostnames = url.hostname.split('.');
       segments = url.pathname.split('/');
       
-      return new AmazonCognitoPasswordVerifier(segments[1], hostnames[1]);
+      return new PasswordVerifier(segments[1], hostnames[1]);
     }
   };
 };
