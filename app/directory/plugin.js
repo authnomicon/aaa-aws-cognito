@@ -1,6 +1,6 @@
-exports = module.exports = function() {
+exports = module.exports = function(ldap) {
   var uri = require('url')
-    , AmazonCognitoPasswordVerifier = require('../../../lib/pwver');
+    , AmazonCognitoDirectory = require('../../lib/directory');
   
   
   return {
@@ -8,10 +8,10 @@ exports = module.exports = function() {
       var url = options.url
         , hostnames;
       if (!url) { return false; }
-      
+    
       url = uri.parse(url);
       hostnames = url.hostname.split('.');
-      
+    
       // https://docs.aws.amazon.com/general/latest/gr/rande.html#cognito_identity_region
       // cognito-idp.{region}.amazonaws.com
       if (hostnames.length == 4
@@ -25,15 +25,15 @@ exports = module.exports = function() {
     create: function(options) {
       var url = uri.parse(options.url)
         , hostnames, segments;
-      
+    
       hostnames = url.hostname.split('.');
       segments = url.pathname.split('/');
       
-      return new AmazonCognitoPasswordVerifier(segments[1], hostnames[1]);
+      return new AmazonCognitoDirectory(segments[1], hostnames[1]);
     }
   };
 };
 
-exports['@implements'] = 'http://schemas.authnomicon.org/js/aaa/authentication/password/VerifierPlugIn';
+exports['@implements'] = 'http://schemas.authnomicon.org/js/aaa/DirectoryPlugIn'
 exports['@name'] = 'amazon-cognito';
 exports['@require'] = [];
