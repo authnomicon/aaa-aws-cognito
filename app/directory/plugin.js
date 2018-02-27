@@ -1,4 +1,4 @@
-exports = module.exports = function(ldap) {
+exports = module.exports = function() {
   var uri = require('url')
     , AmazonCognitoDirectory = require('../../lib/directory');
   
