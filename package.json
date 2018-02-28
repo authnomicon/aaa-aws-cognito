@@ -30,8 +30,8 @@
   "assembly": {
     "namespace": "opt/aws/cognito",
     "components": [
-      "directory/plugin",
-      "authentication/password/plugin"
+      "plugins/authentication/password",
+      "plugins/directory"
     ]
   },
   "dependencies": {
