@@ -28,7 +28,7 @@
   ],
   "main": "./app",
   "assembly": {
-    "namespace": "opt/aws/cognito",
+    "namespace": "org.authnomicon/opt/aws/cognito",
     "components": [
       "authentication/password/verifier",
       "directory"
