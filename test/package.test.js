@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 
 
-describe('@authnomicon/aaa-aws-cognito', function() {
+describe('@authnomicon/aws-cognito', function() {
   
   describe('package.json', function() {
     var json = require('../package.json');
