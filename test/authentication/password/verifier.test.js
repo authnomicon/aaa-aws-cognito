@@ -11,7 +11,7 @@ describe('authentication/password/verifier', function() {
   });
   
   it('should be annotated', function() {
-    expect(factory['@implements']).to.equal('http://schemas.authnomicon.org/js/aaa/authentication/password/VerifierPlugIn');
+    expect(factory['@implements']).to.equal('http://schemas.authnomicon.org/js/ds/authentication/password/VerifierProvider');
     expect(factory['@singleton']).to.equal(undefined);
     
     expect(factory['@name']).to.equal('amazon-cognito');

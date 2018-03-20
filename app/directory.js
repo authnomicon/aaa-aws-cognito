@@ -34,6 +34,6 @@ exports = module.exports = function() {
   };
 };
 
-exports['@implements'] = 'http://schemas.authnomicon.org/js/aaa/DirectoryPlugIn'
+exports['@implements'] = 'http://schemas.authnomicon.org/js/ds/DirectoryProvider'
 exports['@name'] = 'amazon-cognito';
 exports['@require'] = [];

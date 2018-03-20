@@ -36,6 +36,6 @@ exports = module.exports = function() {
   };
 };
 
-exports['@implements'] = 'http://schemas.authnomicon.org/js/aaa/authentication/password/VerifierPlugIn';
+exports['@implements'] = 'http://schemas.authnomicon.org/js/ds/authentication/password/VerifierProvider';
 exports['@name'] = 'amazon-cognito';
 exports['@require'] = [];

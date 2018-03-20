@@ -11,7 +11,7 @@ describe('directory', function() {
   });
   
   it('should be annotated', function() {
-    expect(factory['@implements']).to.equal('http://schemas.authnomicon.org/js/aaa/DirectoryPlugIn');
+    expect(factory['@implements']).to.equal('http://schemas.authnomicon.org/js/ds/DirectoryProvider');
     expect(factory['@singleton']).to.equal(undefined);
     
     expect(factory['@name']).to.equal('amazon-cognito');
