@@ -1,5 +1,5 @@
 {
-  "name": "@authnomicon/aaa-aws-cognito",
+  "name": "@authnomicon/aws-cognito",
   "version": "0.0.0",
   "description": "Amazon Cognito components for the Authnomicon project.",
   "keywords": [
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/authnomicon/aaa-aws-cognito.git"
+    "url": "git://github.com/authnomicon/aws-cognito.git"
   },
   "bugs": {
-    "url": "http://github.com/authnomicon/aaa-aws-cognito/issues"
+    "url": "http://github.com/authnomicon/aws-cognito/issues"
   },
   "license": "MIT",
   "licenses": [
