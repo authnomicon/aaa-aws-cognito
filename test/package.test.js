@@ -12,8 +12,8 @@ describe('@authnomicon/aaa-aws-cognito', function() {
       expect(json.assembly.namespace).to.equal('opt/aws/cognito');
       
       expect(json.assembly.components).to.have.length(2);
-      expect(json.assembly.components).to.include('plugins/authentication/password');
-      expect(json.assembly.components).to.include('plugins/directory');
+      expect(json.assembly.components).to.include('authentication/password/verifier');
+      expect(json.assembly.components).to.include('directory');
     });
   });
   
